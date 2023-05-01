@@ -1,7 +1,7 @@
 #pragma once
 #include "Elka.h"
 
-class player : public Elka
+class player : virtual public Elka
 {
 public:
     player(int memory);

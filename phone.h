@@ -1,7 +1,7 @@
 #pragma once
 #include "Elka.h"
 
-class phone : public Elka
+class phone : virtual public Elka
 {
 public:
     phone(int display);
