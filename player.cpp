@@ -1,10 +1,13 @@
 #include "player.h"
+#include <iostream>
+
+using namespace std;
 
 player::player(int memory) : _memory(memory)
 {
 }
 
-void player::Show() { cout << " §®¢®¥ ª®«¨ç¥áâ¢® ¯ ¬ïâ¨ " << _memory << endl; }
+void player::Show() { cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â¢® ï¿½ï¿½ï¿½ï¿½ï¿½ " << _memory << endl; }
 
 Ipod::Ipod(int memory, int button) : player(memory), _button(button)
 {
@@ -12,7 +15,7 @@ Ipod::Ipod(int memory, int button) : player(memory), _button(button)
 
 void Ipod::Show()
 {
-    cout << " Ipod, ª®«¨ç¥áâ¢® ª­®¯®ª: " << _button << "  §®¢®¥ ª®«¨ç¥áâ¢® ¯ ¬ïâ¨ " << _memory << endl;
+    cout << " Ipod, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â¢® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: " << _button << " ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â¢® ï¿½ï¿½ï¿½ï¿½ï¿½ " << _memory << endl;
 }
 
 mp3::mp3(int memory, string shape) : player(memory), _shape(shape)
@@ -21,5 +24,5 @@ mp3::mp3(int memory, string shape) : player(memory), _shape(shape)
 
 void mp3::Show()
 {
-    cout << " mp3, ä®à¬  ãáâà®©áâ¢ : " << _shape << "  §®¢®¥ ª®«¨ç¥áâ¢® ¯ ¬ïâ¨ " << _memory << endl;
+    cout << " mp3, ï¿½à¬  ï¿½ï¿½ï¿½à®©ï¿½â¢ : " << _shape << " ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â¢® ï¿½ï¿½ï¿½ï¿½ï¿½ " << _memory << endl;
 }

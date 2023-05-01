@@ -1,4 +1,7 @@
 #include "phone.h"
+#include <iostream>
+
+using namespace std;
 
 
 phone::phone(int display) : _display(display)
@@ -7,7 +10,7 @@ phone::phone(int display) : _display(display)
 
 void phone::Show()
 {
-    cout << " §à¥è¥­¨¥ íªà ­  " << _display << endl;
+    cout << "ï¿½ï¿½ï¿½ï¿½è¥­ï¿½ï¿½ ï¿½ï¿½à ­ï¿½ " << _display << endl;
 }
 
 
@@ -17,7 +20,7 @@ iphone::iphone(int display, string color) : phone(display), _color(color)
 
 void iphone::Show()
 {
-    cout << _color << " iphone, à §¬¥à ¤¨á¯«¥ï " << _display << " ¤î©¬®¢" << endl;
+    cout << _color << " iphone, à §ï¿½ï¿½ï¿½ ï¿½ï¿½á¯«ï¿½ï¿½ " << _display << " ï¿½î©¬ï¿½ï¿½" << endl;
 }
 
 samsung::samsung(int display, int camera) : phone(display), _camera(camera)
@@ -26,5 +29,5 @@ samsung::samsung(int display, int camera) : phone(display), _camera(camera)
 
 void samsung::Show()
 {
-    cout << " Samsung, ª ç¥áâ¢® ª ¬¥à " << _camera << "mp" << " à §¬¥à ¤¨á¯«¥ï " << _display << " ¤î©¬®¢" << endl;
+    cout << " Samsung, ï¿½ï¿½ï¿½ï¿½â¢® ï¿½ï¿½ï¿½ï¿½ï¿½ " << _camera << "mp" << " à §ï¿½ï¿½ï¿½ ï¿½ï¿½á¯«ï¿½ï¿½ " << _display << " ï¿½î©¬ï¿½ï¿½" << endl;
 }

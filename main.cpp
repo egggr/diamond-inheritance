@@ -1,3 +1,4 @@
+#include <iostream>
 #include "player.h"
 #include "phone.h"
 #include "ipad.h"
@@ -9,13 +10,13 @@ int main()
     grocery[0] = new iphone(6, string("Space Gray"));
     grocery[1] = new samsung(7, 2);
     grocery[2] = new Ipod(8, 1);
-    grocery[3] = new mp3(16, string("ª¢ ¤à â"));
+    grocery[3] = new mp3(16, string("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"));
     grocery[4] = new ipad(7, 21);
 
     bool open = true;
     while (open)
     {
-        cout << "‚ë¡¥à¨â¥ â¥å­¨ªã : 1 - iphone, 2 - samsung, 3 - Ipod, 4 - mp3, 5 - ipad, 0 çâ®¡ë ¢ë©â¨" << endl;
+        cout << "ï¿½ë¡¥ï¿½ï¿½ ï¿½å­¨ï¿½ï¿½ : 1 - iphone, 2 - samsung, 3 - Ipod, 4 - mp3, 5 - ipad, 0 ï¿½â®¡ï¿½ ï¿½ï¿½ï¿½" << endl;
         int choice;
         cin >> choice;
         switch (choice)
@@ -45,7 +46,7 @@ int main()
             break;
 
         default:
-            cout << "‚ë¡¥à¨â¥ â¥å­¨ªã ®â 1 ¤® 5 ¨«¨ 0, çâ®¡ë ¢ë©â¨" << endl;
+            cout << "ï¿½ë¡¥ï¿½ï¿½ ï¿½å­¨ï¿½ï¿½ ï¿½ï¿½ 1 ï¿½ï¿½ 5 ï¿½ï¿½ï¿½ 0, ï¿½â®¡ï¿½ ï¿½ï¿½ï¿½" << endl;
             break;
         }
     }

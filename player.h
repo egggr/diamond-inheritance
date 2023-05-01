@@ -1,5 +1,6 @@
 #pragma once
 #include "Elka.h"
+#include <string>
 
 class player : public Elka
 {
@@ -24,9 +25,9 @@ private:
 class mp3 final : public player
 {
 public:
-    mp3(int memory, string shape);
+    mp3(int memory, std::string shape);
     void Show() override;
 
 private:
-    string _shape;
+    std::string _shape;
 };
