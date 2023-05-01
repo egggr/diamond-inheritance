@@ -1,5 +1,8 @@
 #pragma once
 #include "Elka.h"
+#include <string>
+
+using namespace std;
 
 class phone : virtual public Elka
 {
@@ -14,10 +17,10 @@ protected:
 class iphone final : public phone
 {
 public:
-    iphone(int display, string color);
+    iphone(int display, std::string color);
     void Show() override;
 private:
-    string _color;
+    std::string _color;
 };
 
 class samsung final : public phone

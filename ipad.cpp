@@ -1,4 +1,7 @@
 #include "ipad.h"
+#include <iostream>
+
+using namespace std;
 
 ipad::ipad(int memory, int display) : phone(display), player(memory)
 {
@@ -6,5 +9,5 @@ ipad::ipad(int memory, int display) : phone(display), player(memory)
 
 void ipad::Show()
 {
-    cout << "ipad размер памяти " << _memory << " размер дисплея " << _display << endl;
+    cout << "ipad пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ " << _memory << " пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ " << _display << endl;
 }
