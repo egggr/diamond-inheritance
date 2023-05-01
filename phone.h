@@ -4,7 +4,7 @@
 
 using namespace std;
 
-class phone : public Elka
+class phone : virtual public Elka
 {
 public:
     phone(int display);

@@ -2,7 +2,7 @@
 #include "Elka.h"
 #include <string>
 
-class player : public Elka
+class player : virtual public Elka
 {
 public:
     player(int memory);
